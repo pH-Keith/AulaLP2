@@ -13,13 +13,13 @@ namespace MyFortnite
             FNPlayer player = new FNPlayer();
             FNPlayer player2 = new FNPlayer(100, 50);
 
-            Console.WriteLine("HP" + player.health);
-            Console.WriteLine("HP" + player2.health);
+            Console.WriteLine("HP" + player.GetHealth());
+            Console.WriteLine("HP" + player2.GetHealth());
 
             player.Attack(player2);
 
-            Console.WriteLine("HP" + player.health);
-            Console.WriteLine("HP" + player2.health);
+            Console.WriteLine("HP" + player.GetHealth());
+            Console.WriteLine("HP" + player2.GetHealth());
         }
     }
 }
