@@ -8,8 +8,21 @@ namespace MyFortnite
 {
     class FNPlayer
     {
-        public int ammo = 10;
+        public int ammo;
         public float health;
+
+        public FNPlayer()
+        {
+            ammo = 0;
+            health = 100;
+        }
+
+        public FNPlayer(int ammo, float health)
+        {
+            this.ammo = ammo;
+            this.health = health;
+        }
+
 
         public float Attack(FNPlayer enemy)
         {
